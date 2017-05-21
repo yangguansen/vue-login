@@ -1,5 +1,5 @@
-import Login from '../page/login.vue'
-import Register from '../page/register.vue'
+const Login = resolve => require(['../page/login.vue'], resolve);		//实现组件按需加载
+const Register = resolve => require(['../page/register.vue'], resolve);
 
 export default [{
     path: '/page/login',
